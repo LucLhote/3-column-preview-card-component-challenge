@@ -64,7 +64,16 @@ p {
 }
 
 h1 {
-    display: none;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
 }
 
 a {
@@ -325,6 +334,10 @@ a {
     .preview__section-button {
         margin-left: 48px;
         margin-left: 3rem;
+    }
+    
+    .preview__section-icon {
+        margin-bottom: 25px;
     }
 
     .preview__section-copy {
