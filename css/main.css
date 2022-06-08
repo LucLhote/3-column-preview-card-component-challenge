@@ -293,6 +293,9 @@ a {
     }
 
     /* Preview Style */
+    .preview {
+        margin-top: 40px;
+    }
     .preview__section:nth-child(1) {
         /**
          * Border radius values:
