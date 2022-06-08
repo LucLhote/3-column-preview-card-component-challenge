@@ -43,8 +43,6 @@
 
 body {
     width: 100vw;
-    min-width: 442px;
-    min-width: 27.625rem;
     min-height: 100vh;
     /**
      * Background color value: --main-background-color: #F2F2F2;
