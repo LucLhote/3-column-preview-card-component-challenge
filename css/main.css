@@ -43,6 +43,8 @@
 
 body {
     width: 100vw;
+    min-width: 442px;
+    min-width: 27.625rem;
     min-height: 100vh;
     /**
      * Background color value: --main-background-color: #F2F2F2;
@@ -280,4 +282,55 @@ a {
      * Font color value: --background-second-section: #006971;
      */
     color: var(--background-second-section);
+}
+
+@media screen and (min-width: 925px) {
+    :root {
+        --grid-template-rows-fb: 500px;
+        --grid-template-row: 31.25rem;
+        --grid-template-columns-fb: 307px 307px 307px;
+        --grid-template-columns: 19.1875rem 19.1875rem 19.1875rem;
+    }
+
+    /* Preview Style */
+    .preview__section:nth-child(1) {
+        /**
+         * Border radius values:
+         *  --section-border-radius: .5rem;
+         *  --section-border-radius-fb: 8px;
+         */
+        border-radius: var(--section-border-radius, --section-border-radius-fb) 0 0 var(--section-border-radius, --section-border-radius-fb);
+    }
+
+    .preview__section:nth-child(3) {
+        /**
+         * Border radius values:
+         *  --section-border-radius: .5rem;
+         *  --section-border-radius-fb: 8px;
+         */
+        border-radius: 0 var(--section-border-radius, --section-border-radius-fb) var(--section-border-radius, --section-border-radius-fb) 0;
+    }
+
+    .preview__section-icon,
+    .preview__section-title,
+    .preview__section-copy,
+    .preview__section-button {
+        margin-left: 48px;
+        margin-left: 3rem;
+    }
+
+    .preview__section-copy {
+        margin-bottom: 83px;
+        margin-bottom: 5.1875rem;
+        width: 212px;
+        width: 13.25rem;
+    }
+
+    /* Footer Style */
+    .attribution {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        gap: .1875rem
+    }
 }
