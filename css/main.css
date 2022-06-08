@@ -63,6 +63,10 @@ p {
     font-family: var(--paragraph-font);
 }
 
+h1 {
+    display: none;
+}
+
 a {
     cursor: pointer;
     transition: all .5s ease-in;
@@ -294,8 +298,9 @@ a {
 
     /* Preview Style */
     .preview {
-        margin-top: 40px;
+        margin-top: 42px;
     }
+
     .preview__section:nth-child(1) {
         /**
          * Border radius values:
